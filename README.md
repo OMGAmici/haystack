@@ -36,25 +36,10 @@
 - Seq2Seq generator for LFQA (long form question answering)
 - Streamlit app for simple UI
 
-Follow our [introductory tutorial](https://haystack.deepset.ai/tutorials/first-qa-system)
-to setup a question answering system using Python and start performing queries!
-Explore [the rest of our tutorials](https://haystack.deepset.ai/tutorials)
-to learn how to tweak pipelines, train models and perform evaluation.
-
-## :beginner: Quick Demo
-
-**Hosted**
-
-Try out our hosted [Explore The World](https://haystack-demo.deepset.ai/) live demo here!
-Ask any question on countries or capital cities and let Haystack return the answers to you.
-
 **Local**
 
 Start up a Haystack service via [Docker Compose](https://docs.docker.com/compose/).
 With this you can begin calling it directly via the REST API or even interact with it using the included Streamlit UI.
-
-<details>
-  <summary>Click here for a step-by-step guide</summary>
 
 **1. Update/install Docker and Docker Compose, then launch Docker**
 
@@ -97,5 +82,3 @@ haystack-api_1   | [2021-01-01 10:21:58 +0000] [17] [INFO] Application startup c
 * Haystack API: listens on port 8000
 * DocumentStore (Elasticsearch): listens on port 9200
 * Streamlit UI: listens on port 8501
-
-Please note that the demo will [publish](https://docs.docker.com/config/containers/container-networking/) the container ports to the outside world. *We suggest that you review the firewall settings depending on your system setup and the security guidelines.*
