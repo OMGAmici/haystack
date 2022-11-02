@@ -282,6 +282,7 @@ class Crawler(BaseComponent):
         for link in urls:
             logger.info("writing contents from '%s'", link)
             self.driver.get(link)
+            self.driver.refresh() #refresh the page because DAU is weird
             if loading_wait_time is not None:
                 time.sleep(loading_wait_time)
             el = self.driver.find_element(by=By.TAG_NAME, value="body")
