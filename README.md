@@ -2,33 +2,6 @@
   <a href="https://www.deepset.ai/haystack/"><img src="https://raw.githubusercontent.com/deepset-ai/haystack/main/docs/img/haystack_logo_colored.png" alt="Haystack"></a>
 </p>
 
-<p>
-    <a href="https://github.com/deepset-ai/haystack/actions/workflows/tests.yml">
-        <img alt="Tests" src="https://github.com/deepset-ai/haystack/workflows/Tests/badge.svg?branch=main">
-    </a>
-    <a href="https://github.com/deepset-ai/haystack-json-schema/actions/workflows/schemas.yml">
-        <img alt="Schemas" src="https://github.com/deepset-ai/haystack-json-schema/actions/workflows/schemas.yml/badge.svg">
-    </a>
-    <a href="https://docs.haystack.deepset.ai">
-        <img alt="Documentation" src="https://img.shields.io/website?label=documentation&up_message=online&url=https%3A%2F%2Fdocs.haystack.deepset.ai">
-    </a>
-    <a href="https://github.com/deepset-ai/haystack/releases">
-        <img alt="Release" src="https://img.shields.io/github/release/deepset-ai/haystack">
-    </a>
-    <a href="https://github.com/deepset-ai/haystack/commits/main">
-        <img alt="Last commit" src="https://img.shields.io/github/last-commit/deepset-ai/haystack">
-    </a>
-    <a href="https://pepy.tech/project/farm-haystack">
-        <img alt="Downloads" src="https://pepy.tech/badge/farm-haystack/month">
-    </a>
-    <a href="https://www.deepset.ai/jobs">
-        <img alt="Jobs" src="https://img.shields.io/badge/Jobs-We're%20hiring-blue">
-    </a>
-        <a href="https://twitter.com/intent/follow?screen_name=deepset_ai">
-        <img alt="Twitter" src="https://img.shields.io/twitter/follow/deepset_ai?style=social">
-    </a>
-</p>
-
 ## Main components:
 
 - ES (ElasticSearch) document store of dimension 384
