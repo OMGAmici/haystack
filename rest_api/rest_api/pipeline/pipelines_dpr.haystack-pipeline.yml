@@ -8,13 +8,16 @@ components:    # define all the building-blocks for Pipeline
     params:
       host: localhost
       similarity: dot_product
-      embedding_dim: 384
+      embedding_dim: 384 #128 #384
   - name: Retriever
     type: MultihopEmbeddingRetriever
     params:
       document_store: DocumentStore    # params can reference other components defined in the YAML
       top_k: 10
       embedding_model: sentence-transformers/all-MiniLM-L6-v2
+      # query_embedding_model: facebook/dpr-question_encoder-single-nq-base #vblagoje/dpr-question_encoder-single-lfqa-wiki
+      # passage_embedding_model: facebook/dpr-ctx_encoder-single-nq-base #vblagoje/dpr-ctx_encoder-single-lfqa-wiki
+      # sentence-transformers/all-MiniLM-L6-v2
       use_gpu: True
   - name: Reader       # custom-name for the component; helpful for visualization & debugging
     type: Seq2SeqGenerator    # Haystack Class name for the component
@@ -37,7 +40,7 @@ components:    # define all the building-blocks for Pipeline
     type: FileTypeClassifier
 
 pipelines:
-  - name: query   
+  - name: query    # a sample extractive-qa Pipeline
     nodes:
       - name: Retriever
         inputs: [Query]
