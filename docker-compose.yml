@@ -17,9 +17,7 @@ services:
         condition: service_healthy
 
   elasticsearch:
-    # This image is "ready-to-query" with some indexed articles
-    # about countries and capital cities from Wikipedia:
-    image: "deepset/elasticsearch-countries-and-capitals"
+    image: "elasticsearch:7.9.2"
     ports:
       - 9200:9200
     restart: on-failure
